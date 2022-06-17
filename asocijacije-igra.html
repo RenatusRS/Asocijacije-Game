@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Igra</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="script.js"></script>
+</head>
+
+<body onload="inicijalizujIgru()">
+    <h1 class="center">ASOCIJACIJE</h1>
+    <hr>
+    <h2>Igra</h2>
+    <progress id="igra" value="0" max="239"></progress>
+    <h2>Potez</h2>
+    <progress id="potez" value="0" max="9"></progress>
+    <h3 id="info" class="center"></h3>
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <h2 id="igrac1"></h2>
+                </td>
+                <td>
+                    <h2 id="igrac2"></h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="final" colspan="2"><input type="button" onclick="zavrsiPotez()" value="DALJE"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <div id="a1" onclick="klik()" class="field guess-left">???</div>
+                </td>
+                <td>
+                    <div id="b1" onclick="klik()" class="field guess-right">???</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="a2" onclick="klik()" class="field guess-left">???</div>
+                </td>
+                <td>
+                    <div id="b2" onclick="klik()" class="field guess-right">???</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="a3" onclick="klik()" class="field guess-left">???</div>
+                </td>
+                <td>
+                    <div id="b3" onclick="klik()" class="field guess-right">???</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="a4" onclick="klik()" class="field guess-left">???</div>
+                </td>
+                <td>
+                    <div id="b4" onclick="klik()" class="field guess-right">???</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="answer-left"><input id="a" class="white" onkeydown="enter()" type="text" placeholder="???">
+                </td>
+                <td class="answer-right"><input id="b" class="white" onkeydown="enter()" type="text" placeholder="???">
+                </td>
+            </tr>
+            <tr>
+                <td class="final" colspan="2"><input id="k" class="white" onkeydown="enter()" type="text"
+                        placeholder="???">
+                </td>
+            </tr>
+            <tr>
+                <td class="answer-left"><input id="c" class="white" onkeydown="enter()" type="text" placeholder="???">
+                </td>
+                <td class="answer-right"><input id="d" class="white" onkeydown="enter()" type="text" placeholder="???">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="c4" onclick="klik()" class="field guess-left">???</div>
+                </td>
+                <td>
+                    <div id="d4" onclick="klik()" class="field guess-right">???</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="c3" onclick="klik()" class="field guess-left">???</div>
+                </td>
+                <td>
+                    <div id="d3" onclick="klik()" class="field guess-right">???</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="c2" onclick="klik()" class="field guess-left">???</div>
+                </td>
+                <td>
+                    <div id="d2" onclick="klik()" class="field guess-right">???</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="c1" onclick="klik()" class="field guess-left">???</div>
+                </td>
+                <td>
+                    <div id="d1" onclick="klik()" class="field guess-right">???</div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

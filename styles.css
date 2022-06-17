@@ -1,0 +1,138 @@
+body {
+    color: white;
+    min-width: 520px;
+    margin: 10px 100px;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgb(61, 81, 107) 0%, rgb(77, 105, 156) 35%, rgb(101, 172, 253) 100%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    font-weight: normal;
+}
+
+p {
+    text-align: justify;
+}
+
+progress {
+    width: 100%;
+    height: 40px;
+    margin: 0%;
+    padding: 0%;
+}
+
+.center {
+    text-align: center;
+}
+
+.red::placeholder {
+    color: lightcoral;
+    opacity: 1;
+}
+
+.red::-ms-input-placeholder {
+    color: lightcoral;
+}
+
+.blue::placeholder {
+    color: cornflowerblue;
+    opacity: 1;
+}
+
+.blue::-ms-input-placeholder {
+    color: cornflowerblue;
+}
+
+.white::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+.white::-ms-input-placeholder {
+    color: white;
+}
+
+table {
+    border-spacing: 0;
+    width: 100%;
+    margin: 20px 0;
+}
+
+td {
+    font-size: 14px;
+    padding: 5px 0;
+    word-break: normal;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.guess-left {
+    margin: 0 50px 0 auto;
+}
+
+.guess-right {
+    margin: 0 auto 0 50px;
+}
+
+.answer-right {
+    text-align: left;
+}
+
+.answer-left {
+    text-align: right;
+}
+
+.answer-left input {
+    margin: 0 20px 0 auto;
+}
+
+.answer-right input {
+    margin: 0 auto 0 20px;
+}
+
+.final {
+    text-align: center;
+}
+
+.field,
+input[type=text] {
+    width: 180px;
+    text-align: center;
+    border: 1px white solid;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(1, 30, 107);
+    color: white;
+}
+
+.field {
+    cursor: pointer;
+}
+
+input[type=button] {
+    box-shadow: inset 2px 0px 0px 0px #ffffff;
+    background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: 1px solid #dcdcdc;
+    cursor: pointer;
+    color: #666666;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-shadow: 0px 1px 0px #ffffff;
+}
+
+input[type=button]:hover {
+    background: linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+    background-color: #f6f6f6;
+}
+
+input[type=button]:active {
+    position: relative;
+    top: 1px;
+}

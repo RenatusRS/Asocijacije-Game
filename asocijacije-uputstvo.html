@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+    <title>Uputstvo</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="script.js"></script>
+</head>
+
+<body onload="inicijalizujUputstvo()">
+    <h1 class="center">ASOCIJACIJE</h1>
+    <hr>
+    <p>
+        U igri asocijacije postoje četiri sporedne asocijacije, pomoću kojih treba rešiti glavnu asocijaciju. Rešenje
+        svake sporedne asocijacije je neki pojam na koji asociraju četiri pojma u njegovoj koloni. Na početku su svi
+        pojomovi sakriveni, a igrači otkrivaju jedan po jedan. Igru igraju dva igrača. Nakon otkrivanja pojma, igrač ima
+        mogućnost da pogađa glavnu ili sporednu asocijaciju. Za rešenje sporedne asocijacije se dobija 5 poena plus broj
+        neotkrivenih pojmova u njegovoj koloni. Za rešenje glavne asocijacije se dobija 10 poena plus broj svih
+        neotkrivenih pojmova. Svaki igrač na svom potezu ima maksimalno 10 sekundi, a ukoliko ne želi u tom potezu da
+        pogađa asocijaciju može da pritisne dugme DALJE i da ranije završi potez.
+    </p>
+    <p>
+        Igra teče tako što igrači naizmenično pokušavaju da pogode asocijacije. Na svakom potezu igrač otvara jedno od
+        zatvorenih polja, i ima mogućnost da pogađa sporednu ili glavnu asocijaciju. Ukoliko uspesno pogodi, dobija
+        odgovarajući broj poena, i pogođena kolona ili glavna asocijacija se boji u njegovu boju. Ukoliko ne pogodi
+        tačno ili pritisne dugme DALJE, vreme za tog igrača se prekida, nastavlja se vreme protivnika i tada on igra
+        svoj potez. Igra se završava kada se pogodi finalna asocijacija ili nakon četiri minuta od početka igre, i zatim
+        se prikazuje ekran sa poenima igrača. Pobednik je igrač koji ima više poena.
+    </p>
+    <table>
+        <tbody>
+            <tr>
+                <td class="answer-left"><input id="igrac1" class="blue" type="text" maxlength="10"
+                        placeholder="Igrač 1">
+                </td>
+                <td class="answer-right"><input id="igrac2" class="red" type="text" maxlength="10"
+                        placeholder="Igrač 2">
+                </td>
+            </tr>
+            <tr>
+                <td class="final" colspan="2"><input type="button" onclick="zapocniIgru()" value="ZAPOČNI IGRU"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
