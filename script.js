@@ -249,5 +249,5 @@ function timerPotez() {
 
 function timerKraj() {
     timePotez++;
-    if (timePotez == 6) window.location.href = "asocijacije-uputstvo.html";
+    if (timePotez == 6) window.location.href = "index.html";
 }
