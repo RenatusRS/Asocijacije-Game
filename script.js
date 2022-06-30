@@ -177,9 +177,9 @@ function enter() {
 function oktrijPolje(id) {
     elem = document.getElementById(id);
 
-    if (!kraj) elem.style.backgroundColor = igraci[igrac].boja;
     if (elem.innerHTML != "???") return 0;
-
+    if (!kraj) elem.style.backgroundColor = igraci[igrac].boja;
+    
     elem.innerHTML = asocijacija[id];
 
     return 1;
