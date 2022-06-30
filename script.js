@@ -177,9 +177,9 @@ function enter() {
 function oktrijPolje(id) {
     elem = document.getElementById(id);
 
-    if (elem.innerHTML != "???") return 0;
     if (!kraj) elem.style.backgroundColor = igraci[igrac].boja;
-    
+    if (elem.innerHTML != "???") return 0;
+
     elem.innerHTML = asocijacija[id];
 
     return 1;
@@ -188,8 +188,10 @@ function oktrijPolje(id) {
 function otkrijOdgovor(id) {
     elem = document.getElementById(id);
 
-    elem.value = asocijacija[id];
+    if (elem.value == asocijacija[id]) return 0;
+    
     if (!kraj) elem.style.backgroundColor = igraci[igrac].boja;
+    elem.value = asocijacija[id];
     elem.disabled = true;
 
     return oktrijPolje(id + '1') + oktrijPolje(id + '2') + oktrijPolje(id + '3') + oktrijPolje(id + '4');
