@@ -188,10 +188,8 @@ function oktrijPolje(id) {
 function otkrijOdgovor(id) {
     elem = document.getElementById(id);
 
-    if (elem.value == asocijacija[id]) return 0;
-    
-    if (!kraj) elem.style.backgroundColor = igraci[igrac].boja;
     elem.value = asocijacija[id];
+    if (!kraj) elem.style.backgroundColor = igraci[igrac].boja;
     elem.disabled = true;
 
     return oktrijPolje(id + '1') + oktrijPolje(id + '2') + oktrijPolje(id + '3') + oktrijPolje(id + '4');
