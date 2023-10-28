@@ -5,4 +5,4 @@ Built with **HTML**, **CSS**, and **JavaScript**, this project replicates _Asoci
 
 ## How-To Start
 
-You can either download and open `index.html` in your browser or use the [online version](renatusrs.github.io/VD-Lab/).
+You can either download and open `index.html` in your browser or use the [online version](https://renatusrs.github.io/VD-Lab/).
